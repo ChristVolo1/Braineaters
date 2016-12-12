@@ -7,6 +7,11 @@ ctx.fill();
 ctx.lineWidth = 7;
 ctx.strokeStyle = 'black';
 ctx.stroke();
+var hero = new Image();
+hero.onload = function () {
+    ctx.drawImage(hero, 100, 50);
+};
+hero.src = "tiny-Link_Super_Smash_Bros._Brawl.jpg";
 var zombie = new Image();
 zombie.onload = function loop() {
     var _loop_1 = function (i) {

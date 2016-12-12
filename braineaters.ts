@@ -15,6 +15,11 @@ ctx.beginPath();
   //    ctx.fillStyle = "indigo";
   //    ctx.fillRect(0, 0, 880, 620);
   // }
+let hero = new Image();
+hero.onload = function() {
+  ctx.drawImage(hero, 100, 50)
+}
+hero.src="tiny-Link_Super_Smash_Bros._Brawl.jpg"
 // interface zombieCharacter {
 //      draw(): void;
 //      y: number;
@@ -32,7 +37,6 @@ zombie.onload = function loop() {
   }
 
   }
-
   zombie.src ="tiny-geek-zombie-icon.jpg";
 
 
