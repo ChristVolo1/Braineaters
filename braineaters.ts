@@ -15,21 +15,24 @@ ctx.beginPath();
   //    ctx.fillStyle = "indigo";
   //    ctx.fillRect(0, 0, 880, 620);
   // }
-
+// interface zombieCharacter {
+//      draw(): void;
+//      y: number;
+//
+//
+// class Zombie extends zombieCharacter {
 let zombie = new Image();
 zombie.onload = function loop() {
-
-  for (let i=400;i < 500; i++){
-    ctx.drawImage(zombie, i,i)
-
-function moveZombie() {
-    
-    setInterval(this.zombie, 500);
+  // if (zombie.y++ >= 900 + zombie) {
+  //     zombie.y = -zombie.;
+  //  }
+  for (let i=40;i < 900; i++){
+    setInterval(function(){ctx.drawImage(zombie, i,450)},5000);
 
   }
 
   }
-}
+
   zombie.src ="tiny-geek-zombie-icon.jpg";
 
 

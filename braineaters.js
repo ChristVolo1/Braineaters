@@ -9,11 +9,11 @@ ctx.strokeStyle = 'black';
 ctx.stroke();
 var zombie = new Image();
 zombie.onload = function loop() {
-    for (var i = 400; i < 500; i++) {
-        ctx.drawImage(zombie, i, i);
-        function moveZombie() {
-            setInterval(this.zombie, 500);
-        }
+    var _loop_1 = function (i) {
+        setInterval(function () { ctx.drawImage(zombie, i, 450); }, 5000);
+    };
+    for (var i = 40; i < 900; i++) {
+        _loop_1(i);
     }
 };
 zombie.src = "tiny-geek-zombie-icon.jpg";
