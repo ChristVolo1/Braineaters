@@ -45,7 +45,7 @@ let zombie = new Image();
 zombie.onload = function loop() {
   
   for (let i=40;i < 900; i++){
-    setInterval(function(){ctx.drawImage(zombie, i,450)},5000);
+    setInterval(function(){ctx.drawImage(zombie, i,450),5000});
     
   }
 
